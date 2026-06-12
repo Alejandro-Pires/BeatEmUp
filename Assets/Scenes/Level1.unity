@@ -2034,8 +2034,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b52487801424b9d4cb77260dd6ca47f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterBeatView
-  m_face: {fileID: 0}
-  m_name: 
+  m_face: {fileID: 21300000, guid: 17283509c23ca7e4f9b9a8b3ce7c1d11, type: 3}
+  m_name: Boss
 --- !u!114 &1620109134
 MonoBehaviour:
   m_ObjectHideFlags: 0
