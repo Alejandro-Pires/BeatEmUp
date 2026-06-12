@@ -111,7 +111,7 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
             {
                 MoveAction (new Vector2(0, 0));
                 m_playerState  = Character_State.ATTACK;
-                StartCoroutine ("Attack");
+                StartCoroutine(Attack());
             }
         }
     }
@@ -176,7 +176,6 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
 
     private IEnumerator Attack () 
 	{
-        Debug.Log("Start Attack");
         m_mainCharacterAnimation.ChangeAnimatorState ("moving", 0);
         if (!m_isDead)
         { 
@@ -200,6 +199,5 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
         m_playerState      = Character_State.WAIT_TO_ATTACK;
         m_timeBeforeAttack = Random.Range (m_minTimeBeforeAttack, m_maxTimeBeforeAttack);
         m_mainCharacterAnimation.ChangeAnimatorState ("moving", 1);
-        Debug.Log("Finish Attack");
 	}
 }

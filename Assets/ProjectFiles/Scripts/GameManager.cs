@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public GameObject       m_player;
     public UIController     m_ui;
     public List<EnemyBeatController> m_enemies;
+    public GameObject nextStageTrigger;
 
     public static GameManager Instance
     {
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     {
         Instance      = this;
         m_enemies = new List<EnemyBeatController>();
+        nextStageTrigger.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -49,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     private void FinishStage ()
     {
-        Debug.Log("FINISH!!");
+        nextStageTrigger.SetActive(true);
     }
 
     public void GameOver    ()
@@ -69,5 +71,6 @@ public class GameManager : MonoBehaviour
     public void RemoveEnemy (EnemyBeatController enemy)
     {
         m_enemies.Remove(enemy);
+        if (m_enemies.Count == 0) FinishStage();
     }
 }
