@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
         nextStageTrigger.SetActive(false);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         m_ui.SetPlayerFace(m_player.GetComponent<CharacterBeatView>().m_face);
@@ -31,11 +30,7 @@ public class GameManager : MonoBehaviour
         GameManager.Instance.m_ui.SetEnableEnemyElements(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    void Update() {}
 
     public void EnemyHitted (Sprite face, string name, float normalizedLife)
     {

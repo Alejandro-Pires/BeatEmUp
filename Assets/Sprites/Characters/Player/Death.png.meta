@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -170,12 +170,12 @@ TextureImporter:
       name: Death_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 200
-        height: 200
+        x: 70
+        y: 78
+        width: 42
+        height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: Death_1
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 200
-        height: 200
+        x: 270
+        y: 78
+        width: 44
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: Death_2
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 200
-        height: 200
+        x: 468
+        y: 78
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: Death_3
       rect:
         serializedVersion: 2
-        x: 600
-        y: 0
-        width: 200
-        height: 200
+        x: 668
+        y: 78
+        width: 50
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,12 +258,12 @@ TextureImporter:
       name: Death_4
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 200
-        height: 200
+        x: 868
+        y: 78
+        width: 52
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: Death_5
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 200
-        height: 200
+        x: 1068
+        y: 78
+        width: 50
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

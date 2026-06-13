@@ -7,7 +7,7 @@ public class EnemyInScene
 {
     public  GameObject m_enemyObject;
     public  float      m_timeToInitBehaviour = 0;
-    public  bool       m_isHiddenAtStar      = false;
+    public  bool       m_isHiddenAtStart      = false;
 
     private float       m_currentTime = 0;
     private EnemyGroup  m_myGroup;
@@ -17,7 +17,7 @@ public class EnemyInScene
     {
         m_myGroup = group;
 
-        if (m_isHiddenAtStar)
+        if (m_isHiddenAtStart)
         {
             m_enemyObject.SetActive(false);
         }
