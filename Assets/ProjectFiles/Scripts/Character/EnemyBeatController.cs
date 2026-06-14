@@ -23,6 +23,7 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
     private CharacterBeatView      m_mainCharacterAnimation;
     private bool                   m_isDead      = false;
     private bool                   m_doingAttack = false;
+    private bool                   m_isFrozen    = false;
     private Vector2                m_movementVector;
     private Vector3                m_velocity;
     private Character_State        m_playerState;
@@ -98,6 +99,7 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
 
     private void Update       ()
     {
+        if (m_isFrozen) return;
         LookToPlayer ();
 
         if (m_playerState == Character_State.CHASE)
@@ -118,6 +120,7 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
 
     private void FixedUpdate  ()
     {
+        if (m_isFrozen) return;
         if (m_playerState == Character_State.CHASE)
         {
             if ((m_bottomAnchor.position.x < m_leftLimit.position.x && m_movementVector.x < 0)|| (m_bottomAnchor.position.x > m_rightLimit.position.x &&  m_movementVector.x > 0))
@@ -200,4 +203,11 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
         m_timeBeforeAttack = Random.Range (m_minTimeBeforeAttack, m_maxTimeBeforeAttack);
         m_mainCharacterAnimation.ChangeAnimatorState ("moving", 1);
 	}
+    
+    public void SetFrozen(bool Frozen)
+    {
+        m_isFrozen = Frozen;
+        m_rigidBody.linearVelocity = Vector2.zero;
+        m_mainCharacterAnimation.ChangeAnimatorState("moving", Frozen ? 0 : 1);
+    }
 }

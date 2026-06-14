@@ -4,7 +4,6 @@ using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(BoxCollider2D))]
-[RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(zOrder))]
 
 
@@ -18,9 +17,6 @@ public class Item : MonoBehaviour, IHittableGameObjectByPlayer
     [SerializeField]
     private    int          m_expiresWithTime;
 
-    [SerializeField]
-    private    AudioSource  m_sfx;
-
     protected CharacterBeatController m_player;
 
     private   float         m_counterTime = 0;
@@ -29,13 +25,6 @@ public class Item : MonoBehaviour, IHittableGameObjectByPlayer
     public         void HitByPlayer   (float damage, CharacterBeatController player)
     {
         m_player = player;
-
-        m_sfx = GetComponent<AudioSource>();
-
-        if (m_sfx != null)
-        {
-            m_sfx.Play();
-        }
 
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = false;
