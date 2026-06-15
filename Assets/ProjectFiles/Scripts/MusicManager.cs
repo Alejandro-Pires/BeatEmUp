@@ -110,6 +110,7 @@ public class MusicManager : MonoBehaviour
             case "Level1": PlayTrack(MusicTrack.Level1); break;
             case "Level2": PlayTrack(MusicTrack.Level2); break;
             case "BossArena": PlayTrack(MusicTrack.Boss); break;
+            case "Victory": PlayTrack(MusicTrack.Victory); break;
         }
     }
 }

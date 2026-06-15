@@ -196,8 +196,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc57058480e34fd2a53fbf5a2b1b626c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectFiles.Scripts.SFXManager
-  m_sfxEntries: []
-  m_poolSize: 10
+  m_sfxEntries:
+  - type: 0
+    clips:
+    - {fileID: 8300000, guid: 5c040fb4a260de347a5b33e7075e438f, type: 3}
+    volume: 0.514
+  - type: 1
+    clips:
+    - {fileID: 8300000, guid: ae10cd4a31a60a249a09544f1ef41597, type: 3}
+    volume: 0.502
+  - type: 2
+    clips:
+    - {fileID: 8300000, guid: 5f4762065c54f16459475304a892daed, type: 3}
+    - {fileID: 8300000, guid: 8ee5b169cf7eddc4cb12fc061821ff0f, type: 3}
+    volume: 0.444
+  - type: 3
+    clips:
+    - {fileID: 8300000, guid: e139c8fb0f9b1bf408b3f14307821f0f, type: 3}
+    volume: 0.788
+  - type: 4
+    clips:
+    - {fileID: 8300000, guid: f91add129b4270f4cbe80853f5f751e4, type: 3}
+    - {fileID: 8300000, guid: 11523d406b28e8f48aa0e14b210282aa, type: 3}
+    volume: 0.344
+  - type: 5
+    clips:
+    - {fileID: 8300000, guid: 7f14c3c49ed354d49aba275b3acf1c88, type: 3}
+    - {fileID: 8300000, guid: f44ee458e84e5e94cb80740dad5da607, type: 3}
+    volume: 0.357
+  - type: 6
+    clips:
+    - {fileID: 8300000, guid: 64aa66f934850fc48a51dbf7ccd40429, type: 3}
+    volume: 0.255
+  - type: 7
+    clips:
+    - {fileID: 8300000, guid: fdd5fdf9c0036a546be59f294f2bc1f5, type: 3}
+    volume: 0.293
+  - type: 8
+    clips:
+    - {fileID: 8300000, guid: 6b00da62de279a54dbc06fcd730ecf1b, type: 3}
+    volume: 0.456
+  - type: 9
+    clips: []
+    volume: 0
+  - type: 10
+    clips: []
+    volume: 0
+  - type: 11
+    clips:
+    - {fileID: 8300000, guid: 40d7821f2d10f5b499e8867ba9d52995, type: 3}
+    volume: 0.66
+  - type: 12
+    clips:
+    - {fileID: 8300000, guid: d6872f11c5f0b9145b14df023cc25d3b, type: 3}
+    volume: 0.66
+  - type: 13
+    clips:
+    - {fileID: 8300000, guid: a4f4c72aee5530e49ac2c1744ac1d934, type: 3}
+    volume: 0.838
+  - type: 14
+    clips:
+    - {fileID: 8300000, guid: 73695f1624b162a4d9fd6ef718bec643, type: 3}
+    volume: 0.838
+  m_poolSize: 15
 --- !u!1 &744617952
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,10 +403,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: e0c63e3010ace5946989502ccd86b2c3, type: 3}
     volume: 1
   - track: 2
-    clip: {fileID: 8300000, guid: 5fed66ce8e0432a4782b05afeba9d785, type: 3}
+    clip: {fileID: 8300000, guid: 638673161faa764449a833a59e689f90, type: 3}
     volume: 1
   - track: 3
     clip: {fileID: 8300000, guid: db31ed3cad5559745b86afe356fba994, type: 3}
+    volume: 1
+  - track: 4
+    clip: {fileID: 8300000, guid: 5fed66ce8e0432a4782b05afeba9d785, type: 3}
     volume: 1
   m_crossfadeDuration: 2
 --- !u!1660057539 &9223372036854775807
