@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class DestructibleObject : MonoBehaviour, IHittableGameObjectByPlayer
 {
@@ -18,7 +19,9 @@ public class DestructibleObject : MonoBehaviour, IHittableGameObjectByPlayer
     public void HitByPlayer(float damage, CharacterBeatController player)
     {
         m_spriteRenderer.sprite = m_hitSprite;
-        //Instantiate(m_item, m_pivot.position, Quaternion.identity);
+        //droppeo un item aleatorio entre el primero y el último asignado en editor
+        int randomItem = Random.Range(0, m_item.Length);
+        Instantiate(m_item[randomItem], m_pivot.position, m_pivot.rotation);
         Destroy(gameObject);
     }
 }

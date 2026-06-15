@@ -137,7 +137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3725d4c375ad0ae42970bdef0d4e4630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestructibleObject
-  m_item: {fileID: 0}
+  m_item:
+  - {fileID: 4966041111134348836, guid: 3558bc83fb9da744c9dfebe92dc8cb02, type: 3}
+  - {fileID: 3185124056690839983, guid: 5499850071b604341959c9451577dc18, type: 3}
   m_pivot: {fileID: 1568304323341027700}
   m_hitSprite: {fileID: -1209127185579228243, guid: a7cd895e791074c458c415b462d33e4f, type: 3}
 --- !u!61 &2497609487190120123
