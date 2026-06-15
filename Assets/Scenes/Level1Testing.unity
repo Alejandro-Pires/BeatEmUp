@@ -346,6 +346,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7243094432190719438, guid: cddad789fe3cda443b1b09c3942db0c1, type: 3}
   m_PrefabInstance: {fileID: 321051451}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &321051454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8136586735547011623, guid: cddad789fe3cda443b1b09c3942db0c1, type: 3}
+  m_PrefabInstance: {fileID: 321051451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321051453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f404652974e2458ddde863e7a6efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBeatController
 --- !u!1 &322202502
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +562,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5756000088107054345, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
   m_PrefabInstance: {fileID: 448384105}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &448384108 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 763719060067568567, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
+  m_PrefabInstance: {fileID: 448384105}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448384107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f404652974e2458ddde863e7a6efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBeatController
 --- !u!1 &456361459
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +810,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7243094432190719438, guid: cddad789fe3cda443b1b09c3942db0c1, type: 3}
   m_PrefabInstance: {fileID: 508802439}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &508802442 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8136586735547011623, guid: cddad789fe3cda443b1b09c3942db0c1, type: 3}
+  m_PrefabInstance: {fileID: 508802439}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508802441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f404652974e2458ddde863e7a6efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBeatController
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,6 +1340,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5756000088107054345, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
   m_PrefabInstance: {fileID: 899586939}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &899586942 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 763719060067568567, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
+  m_PrefabInstance: {fileID: 899586939}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899586941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f404652974e2458ddde863e7a6efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBeatController
 --- !u!1 &919575921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,6 +1639,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7243094432190719438, guid: cddad789fe3cda443b1b09c3942db0c1, type: 3}
   m_PrefabInstance: {fileID: 993790741}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &993790744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8136586735547011623, guid: cddad789fe3cda443b1b09c3942db0c1, type: 3}
+  m_PrefabInstance: {fileID: 993790741}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993790743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f404652974e2458ddde863e7a6efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBeatController
 --- !u!1001 &1015794048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1690,6 +1745,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5756000088107054345, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
   m_PrefabInstance: {fileID: 1015794048}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1015794051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 763719060067568567, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
+  m_PrefabInstance: {fileID: 1015794048}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015794050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f404652974e2458ddde863e7a6efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBeatController
 --- !u!1 &1086066266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,6 +1916,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
+--- !u!114 &1337840362 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 763719060067568567, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
+  m_PrefabInstance: {fileID: 1337840361}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f404652974e2458ddde863e7a6efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBeatController
 --- !u!1 &1362429778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,6 +2189,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
+--- !u!114 &1729851189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 763719060067568567, guid: 59e02d2d3d6928a40a31a2bef1fb42c0, type: 3}
+  m_PrefabInstance: {fileID: 1729851188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4f404652974e2458ddde863e7a6efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBeatController
 --- !u!1 &1773929540
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,7 +2354,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   m_player: {fileID: 2017113281}
   m_ui: {fileID: 1888818087}
-  m_enemies: []
+  m_enemies:
+  - {fileID: 993790744}
+  - {fileID: 321051454}
+  - {fileID: 448384108}
+  - {fileID: 508802442}
+  - {fileID: 1015794051}
+  - {fileID: 899586942}
+  - {fileID: 1337840362}
+  - {fileID: 1729851189}
   nextStageTrigger: {fileID: 1773929540}
 --- !u!4 &1831477603
 Transform:
