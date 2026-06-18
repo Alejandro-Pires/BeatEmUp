@@ -46,12 +46,12 @@ public class UIController : MonoBehaviour
         m_enemyName.text = name;
     }
 
-    public void SetEnableEnemyElements(bool enabled)
-    {
-        m_enemyFace.gameObject.SetActive(enabled);
-        m_enemyLife.gameObject.SetActive(enabled);
-        m_enemyName.gameObject.SetActive(enabled);
-    }
+    // public void SetEnableEnemyElements(bool enabled)
+    // {
+    //     m_enemyFace.gameObject.SetActive(enabled);
+    //     m_enemyLife.gameObject.SetActive(enabled);
+    //     m_enemyName.gameObject.SetActive(enabled);
+    // }
 
     public bool IsEnableEnemyElements()
     {

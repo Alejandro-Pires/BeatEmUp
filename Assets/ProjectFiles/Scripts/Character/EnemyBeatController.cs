@@ -45,8 +45,8 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
     {
         m_currentLife -= (int)damage;
         float normalizedLife = m_currentLife*1f / m_maxLife*1f;
-        GameManager.Instance.m_ui.SetEnableEnemyElements(true);
-        GameManager.Instance.EnemyHitted(m_mainCharacterAnimation.m_face, m_mainCharacterAnimation.name, normalizedLife);
+        //GameManager.Instance.m_ui.SetEnableEnemyElements(true);
+       // GameManager.Instance.EnemyHitted(m_mainCharacterAnimation.m_face, m_mainCharacterAnimation.name, normalizedLife);
         
         if (m_currentLife <= 0)
         {
@@ -56,7 +56,7 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
             m_rigidBody.linearVelocity = Vector2.zero;
             m_velocity = Vector3.zero;
             GameManager.Instance.RemoveEnemy(this);
-            GameManager.Instance.m_ui.SetEnableEnemyElements(false);
+            //GameManager.Instance.m_ui.SetEnableEnemyElements(false);
             Destroy(this.gameObject,2);
         }
         else

@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         m_ui.SetPlayerFace(m_player.GetComponent<CharacterBeatView>().m_face);
         m_ui.SetPlayerName(m_player.GetComponent<CharacterBeatView>().m_name);
         m_ui.SetPlayerLife(1f);
-        m_ui.SetEnableEnemyElements(false);
+        //m_ui.SetEnableEnemyElements(false);
     }
 
     void Update() {}
