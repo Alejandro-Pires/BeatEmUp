@@ -185,7 +185,7 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
 			m_playerState = Character_State.ATTACK;
             m_rigidBody.linearVelocity = Vector2.zero; 
 
-            // Calcular si los enemigos reciben da�o. OverlapSphere
+            // Calcular si los enemigos reciben danho. OverlapSphere
             Collider2D[] objects = Physics2D.OverlapBoxAll (m_hitAnchor.position, m_hitSize, 0);
 
             for (int i = 0; i < objects.Length; i++)
