@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using ProjectFiles.Scripts;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -115,6 +116,7 @@ public class PlayerBeatController : CharacterBeatController, IHittableGameObject
         m_currentLife -= (int)damage;
         float normalizedLife = m_currentLife*1f / m_maxLife*1f;
         GameManager.Instance.PlayerHitted(normalizedLife);
+        GlobalVolumeManager.Instance.TriggerHitEffect();
 
         if (m_currentLife < 0) // Die
         {
