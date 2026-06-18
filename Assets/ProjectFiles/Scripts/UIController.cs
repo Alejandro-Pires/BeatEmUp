@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,11 +8,11 @@ public class UIController : MonoBehaviour
 {
     public Image m_playerFace;
     public Image m_playerLife;
-    public Text  m_playerName;
+    public TMP_Text  m_playerName;
 
     public Image m_enemyFace;
     public Image m_enemyLife;
-    public Text  m_enemyName;
+    public TMP_Text   m_enemyName;
 
     public GameObject m_gameOver;
     

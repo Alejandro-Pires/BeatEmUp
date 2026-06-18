@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
         m_ui.SetPlayerFace(m_player.GetComponent<CharacterBeatView>().m_face);
         m_ui.SetPlayerName(m_player.GetComponent<CharacterBeatView>().m_name);
         m_ui.SetPlayerLife(1f);
-        GameManager.Instance.m_ui.SetEnableEnemyElements(false);
+        m_ui.SetEnableEnemyElements(false);
     }
 
     void Update() {}
@@ -68,4 +69,11 @@ public class GameManager : MonoBehaviour
         m_enemies.Remove(enemy);
         if (m_enemies.Count == 0) FinishStage();
     }
+
+    public void LoadScene(string scene)
+    { SceneManager.LoadScene(scene); }
+    
+    public void Restart() => LoadScene(SceneManager.GetActiveScene().name);
+    public void Quit() => Application.Quit();
+    public void MainMenu() => LoadScene("MainMenu");
 }
