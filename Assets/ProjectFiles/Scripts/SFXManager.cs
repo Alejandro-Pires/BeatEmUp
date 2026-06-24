@@ -28,9 +28,12 @@ namespace ProjectFiles.Scripts
 
         private void Awake()
         {
-            if (Instance != null) { Destroy(gameObject); }
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
+            if (Instance == null)
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else Destroy(gameObject);
             
             //relleno el diccionario con las entradas de arriba
             m_sfxMap = new Dictionary<SFXType, SFXEntry>();

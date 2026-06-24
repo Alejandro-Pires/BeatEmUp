@@ -72,8 +72,4 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string scene)
     { SceneManager.LoadScene(scene); }
-    
-    public void Restart() => LoadScene(SceneManager.GetActiveScene().name);
-    public void Quit() => Application.Quit();
-    public void MainMenu() => LoadScene("MainMenu");
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f70a5c6966baddb41beb8c6911f3b01e
+guid: 16daf76090efe7f46ab1ea85ece92edc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8139614212084782497
-    second: NightBorne_attack_0
+      213: -4392266195755795107
+    second: b22aa22b2f3f55b6468361158d52e2e7_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NightBorne_attack_0
+      name: b22aa22b2f3f55b6468361158d52e2e7_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 240
-        height: 240
+        width: 500
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a5d8081008b5f070800000000000000
-      internalID: 8139614212084782497
+      spriteID: d5df40b8a298b03c0800000000000000
+      internalID: -4392266195755795107
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      NightBorne_attack_0: 8139614212084782497
+      b22aa22b2f3f55b6468361158d52e2e7_0: -4392266195755795107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

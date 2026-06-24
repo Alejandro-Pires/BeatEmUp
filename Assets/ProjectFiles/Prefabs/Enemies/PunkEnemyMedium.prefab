@@ -272,15 +272,15 @@ MonoBehaviour:
   m_maxAirAcceleration: 1
   m_jumpHeight: 2
   m_bottomAnchor: {fileID: 8284081074084201026}
-  m_hitSize: {x: 0.5, y: 1}
+  m_hitSize: {x: 0.5, y: 0.5}
   m_hitAnchor: {fileID: 6595348989331339926}
   m_topLimit: {fileID: 0}
   m_bottomLimit: {fileID: 0}
   m_leftLimit: {fileID: 0}
   m_rightLimit: {fileID: 0}
   m_currentLife: 0
-  m_minTimeBeforeAttack: 2
-  m_maxTimeBeforeAttack: 3
+  m_minTimeBeforeAttack: 3
+  m_maxTimeBeforeAttack: 4
   m_minDistanceToAttack: 2
 --- !u!1 &9040775405083856173
 GameObject:

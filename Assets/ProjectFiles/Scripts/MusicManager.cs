@@ -38,9 +38,12 @@ public class MusicManager : MonoBehaviour
     //misma lógica que SFXManager
     private void Awake()
     {
-        if (Instance != null) { Destroy(gameObject); }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
         
         m_sourceA = gameObject.AddComponent<AudioSource>();
         m_sourceB = gameObject.AddComponent<AudioSource>();
