@@ -1,65 +1,68 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    public Image m_playerFace;
-    public Image m_playerLife;
-    public TMP_Text  m_playerName;
+    public static UIController Instance { get; private set; }
 
-    public Image m_enemyFace;
-    public Image m_enemyLife;
-    public TMP_Text   m_enemyName;
+    [Header("UI del Jugador")]
+    [SerializeField] private Image m_playerFace;    
+    [SerializeField] private Image m_playerLife;
 
-    public GameObject m_gameOver;
+    [Header("UI del Enemigo (Opcional)")]
+    [SerializeField] private Image m_enemyLife;
+
+    [Header("Pantallas")]
+    [SerializeField] private GameObject m_gameOver;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+        
+        if (m_gameOver != null) m_gameOver.SetActive(false);
+        //if (m_enemyLife != null) m_enemyLife.gameObject.SetActive(false);
+    }
     
     public void SetPlayerFace(Sprite playerFace)
     {
-        m_playerFace.sprite = playerFace;
+        if (m_playerFace != null)
+        {
+            m_playerFace.sprite = playerFace;
+        }
     }
 
     public void SetPlayerLife(float lifeNormalized)
     {
-        m_playerLife.fillAmount = lifeNormalized;
+        if (m_playerLife != null)
+        {
+            m_playerLife.fillAmount = Mathf.Clamp01(lifeNormalized);
+        }
     }
 
-    public void SetPlayerName(string name)
+    public void SetEnemyLife(float lifeNormalized)
     {
-        m_playerName.text = name;
-    }
+        if (m_enemyLife != null)
+        {
+            if (lifeNormalized > 0 && !m_enemyLife.gameObject.activeSelf)
+            {
+                m_enemyLife.gameObject.SetActive(true);
+            }
 
-    public void SetEnemyFace (Sprite enemyFace)
-    {
-        m_enemyFace.sprite = enemyFace;
-    }
+            m_enemyLife.fillAmount = Mathf.Clamp01(lifeNormalized);
 
-    public void SetEnemyLife (float lifeNormalized)
-    {
-         m_enemyLife.fillAmount = lifeNormalized;
-    }
-
-    public void SetEnemyName (string name)
-    {
-        m_enemyName.text = name;
-    }
-
-    // public void SetEnableEnemyElements(bool enabled)
-    // {
-    //     m_enemyFace.gameObject.SetActive(enabled);
-    //     m_enemyLife.gameObject.SetActive(enabled);
-    //     m_enemyName.gameObject.SetActive(enabled);
-    // }
-
-    public bool IsEnableEnemyElements()
-    {
-        return m_enemyFace.gameObject.activeSelf;
+            if (lifeNormalized <= 0)
+            {
+                m_enemyLife.gameObject.SetActive(false);
+            }
+        }
     }
 
     public void GameOver()
     {
-        m_gameOver.SetActive(true);
+        if (m_gameOver != null)
+        {
+            m_gameOver.SetActive(true);
+        }
     }
 }

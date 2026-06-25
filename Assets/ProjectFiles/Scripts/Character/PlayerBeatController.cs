@@ -118,7 +118,7 @@ public class PlayerBeatController : CharacterBeatController, IHittableGameObject
         GameManager.Instance.PlayerHitted(normalizedLife);
         GlobalVolumeManager.Instance.TriggerHitEffect();
 
-        if (m_currentLife < 0) // Die
+        if (m_currentLife <= 0) // Die
         {
             m_mainCharacterAnimation.ChangeAnimatorState ("hurt", 2);
             m_playerState = Character_State.DIE;
