@@ -445,7 +445,7 @@ MonoBehaviour:
   m_enemies:
   - {fileID: 1425997951}
   nextStageTrigger: {fileID: 0}
-  sceneToLoadOnClear: YouWin
+  sceneToLoadOnClear: Victory
 --- !u!4 &351875451
 Transform:
   m_ObjectHideFlags: 0
@@ -1413,7 +1413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204820522067093921, guid: c4ecbf000da022c40ae25bb11c7d9890, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8418581
+      value: -2.841354
       objectReference: {fileID: 0}
     - target: {fileID: 6204820522067093921, guid: c4ecbf000da022c40ae25bb11c7d9890, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1603,7 +1603,7 @@ GameObject:
   - component: {fileID: 2108199944}
   - component: {fileID: 2108199943}
   m_Layer: 5
-  m_Name: Backround
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
