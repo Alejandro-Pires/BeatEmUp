@@ -22,6 +22,7 @@ public enum SFXType
     //items
     ItemHeal,
     ItemFreeze,
+    DispenserHit,
     
     //UI
     UIConfirm,

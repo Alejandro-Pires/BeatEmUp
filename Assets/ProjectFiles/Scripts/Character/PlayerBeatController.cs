@@ -87,7 +87,7 @@ public class PlayerBeatController : CharacterBeatController, IHittableGameObject
             m_playerState        = Character_State.ATTACK;
             m_rigidBody.linearVelocity = Vector2.zero; 
 			m_mainCharacterAnimation.ChangeAnimatorState ("attack", 1);
-
+            SFXManager.Instance.Play(SFXType.PlayerPunch);
             Collider2D[] objects = Physics2D.OverlapBoxAll (m_hitAnchor.position, m_hitSize, 0);
 
             for (int i = 0; i < objects.Length; i++)
@@ -120,6 +120,7 @@ public class PlayerBeatController : CharacterBeatController, IHittableGameObject
 
         if (m_currentLife <= 0) // Die
         {
+            SFXManager.Instance.Play(SFXType.PlayerHurt);
             m_mainCharacterAnimation.ChangeAnimatorState ("hurt", 2);
             m_playerState = Character_State.DIE;
             m_rigidBody.linearVelocity = Vector2.zero;
@@ -133,6 +134,7 @@ public class PlayerBeatController : CharacterBeatController, IHittableGameObject
                 SetInGround ();
             }
 
+            SFXManager.Instance.Play(SFXType.PlayerHurt);
             m_mainCharacterAnimation.ChangeAnimatorState ("hurt", 1);
             m_playerState = Character_State.HURT;
             m_rigidBody.linearVelocity = Vector2.zero;

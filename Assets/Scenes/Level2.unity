@@ -1651,7 +1651,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.005675316, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0047283173, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4192,6 +4192,7 @@ MonoBehaviour:
   - {fileID: 1337840362}
   - {fileID: 1729851189}
   nextStageTrigger: {fileID: 1773929540}
+  sceneToLoadOnClear: 
 --- !u!4 &1831477603
 Transform:
   m_ObjectHideFlags: 0
@@ -4766,7 +4767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204820522067093921, guid: c4ecbf000da022c40ae25bb11c7d9890, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.6733012
+      value: -2.67303
       objectReference: {fileID: 0}
     - target: {fileID: 6204820522067093921, guid: c4ecbf000da022c40ae25bb11c7d9890, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4843,7 +4844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4578763527987518885, guid: d519f370f9c17694abca9fccaed92657, type: 3}
       propertyPath: m_Name
-      value: PlayerPrueba
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4578763527987518885, guid: d519f370f9c17694abca9fccaed92657, type: 3}
       propertyPath: m_TagString
@@ -4997,20 +4998,55 @@ PrefabInstance:
     - target: {fileID: 4371410263340776319, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1831477602}
+      objectReference: {fileID: 5703494571254560390}
+    - target: {fileID: 4371410263340776319, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 4371410263340776319, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7496574921146828191, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1831477602}
+      objectReference: {fileID: 5703494571254560390}
+    - target: {fileID: 7496574921146828191, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496574921146828191, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8931473996272075032, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1831477602}
+      objectReference: {fileID: 5703494571254560390}
+    - target: {fileID: 8931473996272075032, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931473996272075032, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
+--- !u!114 &5703494571254560390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3363142136050822654, guid: 9ecdc756eaaf26046bef631a8867a6ce, type: 3}
+  m_PrefabInstance: {fileID: 5703494571254560389}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944833053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4af5bac32ba4e4ab1345c40e0a1075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
 --- !u!1001 &8188163576434398412
 PrefabInstance:
   m_ObjectHideFlags: 0

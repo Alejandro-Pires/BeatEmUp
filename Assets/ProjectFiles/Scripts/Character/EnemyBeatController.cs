@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using ProjectFiles.Scripts;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -49,6 +50,7 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
         
         if (m_currentLife <= 0)
         {
+            SFXManager.Instance.Play(SFXType.EnemyDeath);
             m_mainCharacterAnimation.ChangeAnimatorState ("die", 1);
             StopAllCoroutines();
             m_playerState = Character_State.DIE;
@@ -59,6 +61,7 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
         }
         else
         {
+            SFXManager.Instance.Play(SFXType.EnemyHurt);
             m_mainCharacterAnimation.ChangeAnimatorState ("hurt", 1);
             m_playerState = Character_State.HURT;
             m_rigidBody.linearVelocity = Vector2.zero;
@@ -182,7 +185,7 @@ public class EnemyBeatController : CharacterBeatController, IHittableGameObjectB
         { 
 			m_playerState = Character_State.ATTACK;
             m_rigidBody.linearVelocity = Vector2.zero; 
-
+            SFXManager.Instance.Play(SFXType.EnemyPunch);
             // Calcular si los enemigos reciben dano. OverlapSphere
             Collider2D[] objects = Physics2D.OverlapBoxAll (m_hitAnchor.position, m_hitSize, 0);
 

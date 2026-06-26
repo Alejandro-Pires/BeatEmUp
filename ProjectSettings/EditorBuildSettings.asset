@@ -10,15 +10,15 @@ EditorBuildSettings:
     guid: 2543ca193d0063b49bd8ae7f6747526c
   - enabled: 1
     path: Assets/Scenes/Level1.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: 4f532f5ecda29e84c82bafb37e526996
   - enabled: 1
     path: Assets/Scenes/Level2.unity
-    guid: 4f532f5ecda29e84c82bafb37e526996
+    guid: ad7b18be7cd8da248bcbc0a20d85f9ca
   - enabled: 1
     path: Assets/Scenes/Boss.unity
     guid: 5f57b794b60eb8940b44a2086ce20067
   - enabled: 1
-    path: Assets/Scenes/YouWin.unity
+    path: Assets/Scenes/Victory.unity
     guid: c4f0c870e5c11134fa812b682c79c1a6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

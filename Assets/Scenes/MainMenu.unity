@@ -258,19 +258,19 @@ MonoBehaviour:
   m_tracks:
   - track: 0
     clip: {fileID: 8300000, guid: 2ace248804ed17140a7fd1e708442eb9, type: 3}
-    volume: 1
+    volume: 0.59
   - track: 1
     clip: {fileID: 8300000, guid: 638673161faa764449a833a59e689f90, type: 3}
     volume: 1
   - track: 2
     clip: {fileID: 8300000, guid: e0c63e3010ace5946989502ccd86b2c3, type: 3}
-    volume: 1
+    volume: 0.69
   - track: 3
     clip: {fileID: 8300000, guid: db31ed3cad5559745b86afe356fba994, type: 3}
-    volume: 1
+    volume: 0.72
   - track: 4
     clip: {fileID: 8300000, guid: 5fed66ce8e0432a4782b05afeba9d785, type: 3}
-    volume: 1
+    volume: 0.58
   m_crossfadeDuration: 2
 --- !u!114 &667096939
 MonoBehaviour:
@@ -288,7 +288,7 @@ MonoBehaviour:
   - type: 0
     clips:
     - {fileID: 8300000, guid: 5c040fb4a260de347a5b33e7075e438f, type: 3}
-    volume: 0.514
+    volume: 0.73
   - type: 1
     clips:
     - {fileID: 8300000, guid: ae10cd4a31a60a249a09544f1ef41597, type: 3}
@@ -297,11 +297,11 @@ MonoBehaviour:
     clips:
     - {fileID: 8300000, guid: 5f4762065c54f16459475304a892daed, type: 3}
     - {fileID: 8300000, guid: 8ee5b169cf7eddc4cb12fc061821ff0f, type: 3}
-    volume: 0.444
+    volume: 0.72
   - type: 3
     clips:
     - {fileID: 8300000, guid: e139c8fb0f9b1bf408b3f14307821f0f, type: 3}
-    volume: 0.788
+    volume: 1
   - type: 4
     clips:
     - {fileID: 8300000, guid: f91add129b4270f4cbe80853f5f751e4, type: 3}
@@ -319,11 +319,11 @@ MonoBehaviour:
   - type: 7
     clips:
     - {fileID: 8300000, guid: fdd5fdf9c0036a546be59f294f2bc1f5, type: 3}
-    volume: 0.293
+    volume: 0.55
   - type: 8
     clips:
     - {fileID: 8300000, guid: 6b00da62de279a54dbc06fcd730ecf1b, type: 3}
-    volume: 0.456
+    volume: 0.66
   - type: 9
     clips: []
     volume: 0
@@ -333,15 +333,15 @@ MonoBehaviour:
   - type: 11
     clips:
     - {fileID: 8300000, guid: 40d7821f2d10f5b499e8867ba9d52995, type: 3}
-    volume: 0.66
+    volume: 0.93
   - type: 12
     clips:
     - {fileID: 8300000, guid: d6872f11c5f0b9145b14df023cc25d3b, type: 3}
-    volume: 0.66
+    volume: 1
   - type: 13
     clips:
-    - {fileID: 8300000, guid: a4f4c72aee5530e49ac2c1744ac1d934, type: 3}
-    volume: 0.838
+    - {fileID: 8300000, guid: 6d0de7d9ba6f87e44ab79b4d5cb5ed86, type: 3}
+    volume: 1
   - type: 14
     clips:
     - {fileID: 8300000, guid: 73695f1624b162a4d9fd6ef718bec643, type: 3}

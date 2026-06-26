@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using ProjectFiles.Scripts;
 using UnityEngine;
 
 public class HealthItem : Item
@@ -11,6 +12,7 @@ public class HealthItem : Item
         base.HitByPlayer(damage, player);
         m_player.AddHealth(m_health);
         StartCoroutine(HealFlash());
+        SFXManager.Instance.Play(SFXType.ItemHeal);
     }
 
     public override void ExecuteAction ()

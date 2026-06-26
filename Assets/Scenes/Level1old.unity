@@ -2099,6 +2099,7 @@ MonoBehaviour:
   m_ui: {fileID: 0}
   m_enemies: []
   nextStageTrigger: {fileID: 1773929540}
+  sceneToLoadOnClear: 
 --- !u!4 &1831477603
 Transform:
   m_ObjectHideFlags: 0
@@ -2145,10 +2146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIController
   m_playerFace: {fileID: 0}
   m_playerLife: {fileID: 0}
-  m_playerName: {fileID: 0}
-  m_enemyFace: {fileID: 0}
   m_enemyLife: {fileID: 0}
-  m_enemyName: {fileID: 0}
   m_gameOver: {fileID: 0}
 --- !u!4 &1888818088
 Transform:

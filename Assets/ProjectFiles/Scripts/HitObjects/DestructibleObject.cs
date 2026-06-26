@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using ProjectFiles.Scripts;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,7 +21,7 @@ public class DestructibleObject : MonoBehaviour, IHittableGameObjectByPlayer
     public void HitByPlayer(float damage, CharacterBeatController player)
     {
         m_spriteRenderer.sprite = m_hitSprite;
-        
+        SFXManager.Instance.Play(SFXType.DispenserHit);
         while (hitCount == 0)
         {
             //droppeo un item aleatorio entre el primero y el último asignado en editor

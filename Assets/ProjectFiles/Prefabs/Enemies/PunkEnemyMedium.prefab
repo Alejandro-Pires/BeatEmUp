@@ -279,7 +279,7 @@ MonoBehaviour:
   m_leftLimit: {fileID: 0}
   m_rightLimit: {fileID: 0}
   m_currentLife: 0
-  m_minTimeBeforeAttack: 3
+  m_minTimeBeforeAttack: 4
   m_maxTimeBeforeAttack: 4
   m_minDistanceToAttack: 2
 --- !u!1 &9040775405083856173
